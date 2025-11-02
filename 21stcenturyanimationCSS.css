@@ -1,0 +1,569 @@
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(https://static.vecteezy.com/system/resources/previews/060/284/460/non_2x/abstract-psychedelic-checkerboard-background-with-retro-colors-trippy-modern-design-with-distortion-grid-effect-twisted-wavy-and-groovy-geometrical-chessboard-distorted-funky-70s-hippie-art-vector.jpg);
+  filter: brightness(0.5);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #5b3000;
+  border-radius: 7.5px;
+  background: url(https://img.freepik.com/free-photo/abstract-smooth-orange-background-layout-designstudioroom-web-template-business-report-with-smooth-c_1258-54783.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #176a00;
+  font-family: 'Mali', cursive;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #176a00;
+  text-shadow: 0 0 15px #692e00;
+  transform: translateY(-2px);
+  transition: color 0.3 ease;
+}
+
+.nav-links a.active {
+  color: #fffb00;         
+  font-weight: bold;
+  border-bottom: 1.5px solid #fffb00;
+}
+
+#articletitle {
+  text-align: center;
+  font-family: 'Caprasimo', serif;
+  font-size: 44px;
+  color: rgb(195, 0, 255);
+  text-shadow: 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards, glowPulse 2.5s ease-in-out infinite 1.2s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255), 0 0 10px rgb(179, 213, 255);
+    transform: scale(1.0075);
+  }
+}
+
+.articletext {
+  font-family: 'Delius', cursive;
+  font-size: 15px;
+  color: rgb(255, 252, 216);
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.articletextlist {
+  font-family: 'Happy Monkey', system-ui;
+  font-size: 13.5px;
+  color: rgb(194, 255, 182);
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.headerpic, .headerpic2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  text-align: right;
+}
+
+.headerpic img {
+  display: block;
+  padding: 3.5px;
+  width: auto;
+  height: 350px;
+}
+
+.headerpic2 img {
+  display: block;
+  padding: 3.5px;
+  width: auto;
+  height: 250px;
+}
+
+.picturecitation {
+  text-align: right;
+  font-family: 'Nunito', sans-serif;
+  font-size: 9px;
+  color: white;
+  margin-right: 21px;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sectiontitle {
+      color: #000000;
+      text-shadow: 0px 0px 5px rgba(255, 255, 255), 0px 0px 5px rgba(255, 255, 255), 0px 0px 5px rgba(255, 255, 255), 0px 0px 5px rgba(255, 255, 255);
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Oregano', cursive;
+}
+
+.sectiontitle span {
+      display: inline-block;
+      animation: wave 1s ease-in-out infinite;
+}
+
+.sectiontitle span:nth-child(1) { animation-delay: 0s; }
+.sectiontitle span:nth-child(2) { animation-delay: 0.05s; }
+.sectiontitle span:nth-child(3) { animation-delay: 0.1s; }
+.sectiontitle span:nth-child(4) { animation-delay: 0.15s; }
+.sectiontitle span:nth-child(5) { animation-delay: 0.2s; }
+.sectiontitle span:nth-child(6) { animation-delay: 0.25s; }
+.sectiontitle span:nth-child(7) { animation-delay: 0.3s; }
+.sectiontitle span:nth-child(8) { animation-delay: 0.35s; }
+.sectiontitle span:nth-child(9) { animation-delay: 0.4s; }
+.sectiontitle span:nth-child(10) { animation-delay: 0.45s; }
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7.5px); }
+}
+
+.sectiontitle2 {
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+      font-size: 30.5px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Fuzzy Bubbles', sans-serif;
+}
+
+#influence1 {
+  color: #ff00b7;
+}
+#influence2 {
+  color: #00ffff;
+}
+#influence3 {
+  color: #ff0000;
+}
+#influence4 {
+  color: #59dc3c;
+}
+
+.sectiontitle3 {
+      color: #ffdd00;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+      font-size: 45.5px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Emilys Candy', sans-serif;
+      text-decoration: underline;
+}
+
+.sectionsubtitle {
+      color: #c9c9c9;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Macondo', cursive;
+      text-decoration: underline;
+}
+
+.top10currentfavorites {
+  display: grid;
+  gap: 7.5px;
+  width: 100%;
+  max-width: 12.575in;
+  margin: 0 auto;
+}
+
+.currentfavoriterow {
+  display: grid;
+  gap: 7.5px;
+}
+.currentfavoriterow.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+.currentfavoriterow.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.currentfavorite {
+  display: grid;
+  font-family: 'Yomogi', cursive;
+  font-size: 17.5px;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  padding: 50px;
+  text-align: center;
+  border: 1.5px solid;
+  border-radius: 2px;
+  align-items: end;
+  box-shadow: 3px 3px 4px rgb(0, 0, 0);
+  height: 1.7in;
+}
+
+.currentfavorite:hover {
+  transform: translateX(-1px) translateY(-1px);
+}
+
+#favorite1 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://media.them.us/photos/6349907fe489ca1c8ce750d3/16:9/w_2560%2Cc_limit/theowlhouseheader.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #9900ff;
+  border-color: #9900ff;
+}
+
+#favorite1:hover {
+  box-shadow: 2px 2px 5px #9900ff;
+}
+
+#favorite2 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://m.media-amazon.com/images/M/MV5BZjEyODBhNDQtYzkwNy00MzQ0LTkzZTEtMzI0MWIxNTA5MTA3XkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #1a76ff;
+  border-color: #1a76ff;
+}
+
+#favorite2:hover {
+  box-shadow: 2px 2px 5px #1a76ff;
+}
+
+#favorite3 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://preview.redd.it/do-you-think-marcy-likes-anne-or-sasha-better-v0-dk2cpqpt3hsc1.jpeg?auto=webp&s=93430fdb9ab131cb79456f5c4b8b4723dc5df3d3);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #05a93e;
+  border-color: #05a93e;
+}
+
+#favorite3:hover {
+  box-shadow: 2px 2px 5px #05a93e;
+}
+
+#favorite4 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://m.media-amazon.com/images/M/MV5BNjFkYWVlZGUtNGFlMS00NGEyLTg4NGQtNDZmZjQ5ZGJlMDQ4XkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #d6af02;
+  border-color: #d6af02;
+}
+
+#favorite4:hover {
+  box-shadow: 2px 2px 5px #d6af02;
+}
+
+#favorite5 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://i0.wp.com/biggestinjapan.com/wp-content/uploads/2019/03/CS-ivyzack.jpg?resize=960%2C540);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #960000;
+  border-color: #960000;
+}
+
+#favorite5:hover {
+  box-shadow: 2px 2px 5px #960000;
+}
+
+#favorite6 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://www.geekgirlauthority.com/wp-content/uploads/2024/12/Jentry_Chau_vs_the_Underworld_n_S1_E5_00_07_43_08.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #d3cdb0;
+  border-color: #d3cdb0;
+}
+
+#favorite6:hover {
+  box-shadow: 2px 2px 5px #d3cdb0;
+}
+
+#favorite7 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://m.media-amazon.com/images/M/MV5BYzBkOTY0YjktMmRkYy00MmE1LTk1NWMtN2JhZmJmMjYwYTdlXkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #3cff00;
+  border-color: #3cff00;
+}
+
+#favorite7:hover {
+  box-shadow: 2px 2px 5px #3cff00;
+}
+
+#favorite8 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://i0.wp.com/thepeachreview.com/wp-content/uploads/2024/12/The_Dragon_Prince_S6_still_09.jpg?ssl=1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #9db9e7;
+  border-color: #9db9e7;
+}
+
+#favorite8:hover {
+  box-shadow: 2px 2px 5px #9db9e7;
+}
+
+#favorite9 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://scontent.fcrk2-2.fna.fbcdn.net/v/t39.30808-6/512745871_1393334255305286_7088757408613574297_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_ohc=3q9ZBB_MTogQ7kNvwHO9ZIN&_nc_oc=AdmQhegI8LD_UjljE-EGHeKEDs9VcqEyUgxakFFPrmBcFN4VZS7oGwDu_WGIcacZNbg&_nc_zt=23&_nc_ht=scontent.fcrk2-2.fna&_nc_gid=H6Hzt67taNVkXmr2LiDb9Q&oh=00_Afdu33eT7q0yTigkTVi56_qYtxN7k4l-ay3IeZMMKkfQzw&oe=690B97AC);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+#favorite9:hover {
+  box-shadow: 2px 2px 5px #e6e6e6;
+}
+
+#favorite10 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://m.media-amazon.com/images/M/MV5BZWZmZTRhYTItN2FiZi00ZGZhLWJjYjYtOTY1YjhmM2FiOGY3XkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ff1d3f;
+  border-color: #ff1d3f;
+}
+
+#favorite10:hover {
+  box-shadow: 2px 2px 5px #ff1d3f;
+}
+
+.entirelist {
+  width: 97%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#inducteeTable {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 1px;
+  background-color: #451200;
+}
+
+#inducteeTable th {
+  font-family: 'Rancho', cursive;
+  color: #630000;
+  background-color: #e06565;
+  font-size: 17.5px;
+}
+
+#inducteeTable td {
+  background-color: #32090d;
+  color:#dfdba7;
+  font-family: "Sriracha", cursive;
+  font-size: 12.5px;
+}
+
+#inducteeTable tbody tr td:nth-child(2) {
+  color: rgb(255, 0, 106);
+  text-shadow: 0px 0px 1.25px rgba(255, 0, 191, 0.5), 0px 0px 1.25px rgb(255, 0, 191, 0.5), 0px 0px 1.25px rgb(255, 0, 191, 0.5), 0px 0px 1.25px rgb(255, 0, 191, 0.5);
+  font-size: 13.5px;
+}
+
+th {
+  cursor: pointer;
+  position: relative;
+}
+
+th [aria-sort="ascending"], th [aria-sort="descending"] {
+  position: absolute;
+}
+
+th [aria-sort="ascending"]::after {
+  position: absolute;
+  right: 5px;
+}
+
+th [aria-sort="descending"]::after {
+  position: absolute;
+  right: 5px;
+}
+
+th [aria-sort="none"]::after {
+  content: '♢';
+  position: absolute;
+  right: 0px;
+  color: #ccc;
+}
+
+th.sortable { cursor: pointer; user-select: none; }
+th[aria-sort="ascending"]::after { content: " ⥁"; }
+th[aria-sort="descending"]::after { content: " ⥀"; }
+th:not(.sortable) { cursor: default; }
+
+
+.shot img {
+  width: 150px;
+  height: auto;
+}
+
+.citationlist {
+  background: url(https://img.freepik.com/free-vector/white-canvas-background_1053-239.jpg?semt=ais_hybrid&w=740&q=80);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#referenceheader {
+  font-size: 32px;
+  font-family: 'Momo Signature', cursive;
+}
+
+.citationlist>div {
+  font-size: 15.5px;
+  color: #000000;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.citationinfo {
+  font-family: 'Yellowtail', cursive;
+  margin-left: 40px;
+}
+
+.userprofile {
+  background: none;
+  display: flex;
+  width: 100%;
+}
+
+.userprofile>div {
+  text-align: justify;
+  padding: 5.5px;
+}
+
+.userintroduction {
+  text-align: justify;
+  font-size: 21px;
+  font-family: 'Gochi Hand';
+  color: rgb(223, 255, 215);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.userintrogrid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 10in;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.userintrogrid img {
+  height: 1.49in;
+  width: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.profilepicture img {
+  width: 348px;
+  height: auto
+}
+
+.card-container2 {
+  background: url("https://media.istockphoto.com/id/1329715338/vector/dots-and-lines-penetrate-upward-through-particle-trajectory-network-technology-and-speed.jpg?s=612x612&w=0&k=20&c=p4Bb2XUHc_Wl7rVMmHjj-yggeaxbcHk_Gjd4IgKu8uA=");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(1.1);
+}
+
+.card-container2>div {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 12.5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1230px;
+  height: 20px;
+  text-align: center;
+  padding: 6.5px;
+  filter: brightness(0.9);
+}
+
+.socials img {
+  width: 13.75px;
+  height: auto;
+}
+
+.card-container3 {
+  background: none;
+  filter: brightness(1);
+}
+
+.card-container3>div {
+  margin-right: 5px;
+  font-family: 'Hi Melody', sans-serif;
+  font-size: 14.5px;
+  color: rgb(251, 255, 0);
+  text-align: right;
+  padding: 0px;
+  filter: brightness(0.9);
+  text-shadow: 1px 1px 5px #000000;
+}
+
+#tagline {
+  text-align: center;
+  color: rgb(255, 157, 0);
+  text-shadow: 2px 2px 5px #000000;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 20px;
+}
